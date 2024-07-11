@@ -13,8 +13,33 @@
 }
 
 @font-face {
+  font-family: LexendExa;
+  src: url(public/fonts/LexendExa-Light.ttf);
+}
+
+@font-face {
+  font-family: LexendGiga;
+  src: url(public/fonts/LexendGiga-Light.ttf);
+}
+
+@font-face {
+  font-family: LexendMega;
+  src: url(public/fonts/LexendMega-Light.ttf);
+}
+
+@font-face {
   font-family: LexendPeta;
   src: url(public/fonts/LexendPeta-Light.ttf);
+}
+
+@font-face {
+  font-family: LexendTera;
+  src: url(public/fonts/LexendTera-Light.ttf);
+}
+
+@font-face {
+  font-family: LexendZetta;
+  src: url(public/fonts/LexendZetta-Light.ttf);
 }
 
 :root {

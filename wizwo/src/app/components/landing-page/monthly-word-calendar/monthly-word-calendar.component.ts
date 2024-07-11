@@ -2,11 +2,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-logo',
+  selector: 'app-monthly-word-calendar',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './logo.component.html',
-  styleUrl: './logo.component.scss',
+  templateUrl: './monthly-word-calendar.component.html',
+  styleUrl: './monthly-word-calendar.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LogoComponent {}
+export class MonthlyWordCalendarComponent {}
