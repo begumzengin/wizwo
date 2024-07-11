@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Lexend;
+  src: url(public/fonts/Lexend-Light.ttf);
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url(public/fonts/LexendDeca-Light.ttf);
+}
+
+@font-face {
+  font-family: LexendPeta;
+  src: url(public/fonts/LexendPeta-Light.ttf);
+}
+
+:root {
+  font: 18px Lexend;
+}
