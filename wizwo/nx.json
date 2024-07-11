@@ -52,5 +52,6 @@
       "unitTestRunner": "jest"
     }
   },
-  "nxCloudAccessToken": "NTk5YjBhODYtMmFlMy00OTRhLThhMzgtODExNjZiMGI4OWVkfHJlYWQtd3JpdGU="
+  "defaultProject": "wizwo",
+  "nxCloudAccessToken": "YTg2ODhmNzMtZTgyNC00MWIzLWE2ODUtZjk3ZmYwNDJiNmVjfHJlYWQtd3JpdGU="
 }

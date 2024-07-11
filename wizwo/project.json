@@ -1,28 +1,28 @@
 {
   "name": "wizwo",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/wizwo/src",
+  "sourceRoot": "./src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/wizwo",
-        "index": "apps/wizwo/src/index.html",
-        "browser": "apps/wizwo/src/main.ts",
+        "outputPath": "dist/wizwo",
+        "index": "./src/index.html",
+        "browser": "./src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/wizwo/tsconfig.app.json",
+        "tsConfig": "tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/wizwo/public"
+            "input": "public"
           }
         ],
-        "styles": ["apps/wizwo/src/styles.scss"],
+        "styles": ["./src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -68,13 +68,16 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint"
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["./src"]
+      }
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": ["{workspaceRoot}/coverage/{projectName}"],
       "options": {
-        "jestConfig": "apps/wizwo/jest.config.ts"
+        "jestConfig": "jest.config.ts"
       }
     }
   }
