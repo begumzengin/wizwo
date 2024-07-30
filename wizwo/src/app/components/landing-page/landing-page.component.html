@@ -1,11 +1,17 @@
-<div class="px-5">
-  <div id="today" class="flex align-center py-10">
-    <i class="pi pi-calendar-clock" style="font-size: 25px; color: #7790ed"></i>
-    <div class="text-wizwo-cream font-[LexendGiga] ml-2">
-      {{ today | date : 'fullDate' }}
+<div class="px-5 grid grid-cols-1 md:grid-cols-2 gap-2">
+  <div class="col-span-1">
+    <div id="today" class="flex align-center py-10">
+      <i
+        class="pi pi-calendar-clock"
+        style="font-size: 25px; color: #7790ed"
+      ></i>
+      <div class="text-wizwo-cream font-[LexendGiga] ml-2">
+        {{ today | date : 'fullDate' }}
+      </div>
     </div>
+    <app-word-of-the-day></app-word-of-the-day>
   </div>
-  <app-word-of-the-day></app-word-of-the-day>
-  <app-exercise-card></app-exercise-card>
-  <app-monthly-word-calendar></app-monthly-word-calendar>
+  <div class="col-span-1">
+    <app-monthly-word-calendar></app-monthly-word-calendar>
+  </div>
 </div>
