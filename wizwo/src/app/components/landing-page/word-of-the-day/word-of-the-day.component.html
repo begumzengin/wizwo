@@ -1,1 +1,34 @@
-<p>word-of-the-day works!</p>
+<div
+  class="flex flex-col align-center border-solid border-wizwo-blue rounded-lg p-3 bg-wizwo-blue w-96 h-96 overflow-auto"
+>
+  <div class="text-center">
+    <h3 class="font-[LexendGiga]">word of the day</h3>
+    <h1
+      id="word"
+      class="font-[LexendZetta] text-3xl py-2 text-wizwo-cream"
+    ></h1>
+    <h4 id="type" class="font-[LexendZetta] text-wizwo-cream"></h4>
+  </div>
+  <div class="pt-6 font-[LexendExa] flex-grow">
+    <div class="pt-2">
+      <p class="text-wizwo-cream">
+        pronunciation: <span id="pronunciation" class="text-wizwo-black"></span>
+      </p>
+    </div>
+    <div class="pt-2">
+      <p class="text-wizwo-cream">
+        meaning: <span id="meaning" class="text-wizwo-black"></span>
+      </p>
+    </div>
+    <div class="pt-2">
+      <p class="text-wizwo-cream">
+        example: <span id="example" class="text-wizwo-black"></span>
+      </p>
+    </div>
+  </div>
+  <div class="font-[LexendDeca] text-wizwo-cream flex justify-end mt-auto">
+    <!-- <i class="pi pi-file-plus" style="font-size: 1.5rem"></i>
+    <p class="px-2">add to notebook</p> -->
+    <p-button icon="pi pi-file-plus" label="add to notebook"></p-button>
+  </div>
+</div>
