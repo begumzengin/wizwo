@@ -1,1 +1,18 @@
-<p>monthly-word-calendar works!</p>
+<div class="border-solid border-wizwo-blue rounded-lg w-full h-full bg-wizwo-blue mt-10 flex flex-col justify-between">
+  <div>
+    <div class="flex items-center justify-center py-3">
+      <i class="pi pi-calendar mt-1" style="font-size: 30px; color: #F5EDE2"></i>
+      <h1 class="font-[LexendGiga] text-3xl px-2 text-wizwo-cream">{{ currentMonth }}'s words</h1>
+    </div>
+
+    <div class="grid grid-cols-3 gap-x-8 gap-y-4 px-4">
+      <app-daily-word-card *ngFor="let word of paginatedWords; let i = index" [word]="word" [index]="i + 1"></app-daily-word-card>
+    </div>
+  </div>
+
+  <div class="pagination-controls flex justify-between items-center px-4 py-2 bg-wizwo-blue">
+    <button (click)="prevPage()" [disabled]="currentPage === 1" class="bg-wizwo-cream px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed">previous</button>
+    <span class="text-wizwo-cream font-semibold">page {{ currentPage }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage * wordsPerPage >= words.length" class="bg-wizwo-cream px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed">next</button>
+  </div>
+</div>
